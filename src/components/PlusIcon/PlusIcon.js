@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../Icon/Icon';
 import './PlusIcon.css';
 
 class PlusIcon extends React.Component {
@@ -7,7 +8,10 @@ class PlusIcon extends React.Component {
     this.rotate = this.rotate.bind(this);
     this.state = {
       rotated: false,
-      classList: "plus-icon"
+      classLists: {
+        "icon": "plus_icon-icon",
+        "content": "plus_icon-content"
+      }
     };
   }
 
@@ -18,10 +22,17 @@ class PlusIcon extends React.Component {
   };
 
   render() {
+    const { rotated, classLists } = this.state;
+
     return (
-      <div 
-        className={this.state.rotated ? this.state.classList + " rotated" : this.state.classList} 
-        onClick={this.rotate}>
+      <div className="plus_icon">
+        <Icon classList={rotated ? classLists.icon + " rotate" : classLists.icon} onClick={this.rotate}>
+          <span className="center"></span>
+          <span className="center"></span>
+        </Icon>
+        <div className={rotated ? classLists.content + " show" : classLists.content}>
+          <p>Content</p>
+        </div>
       </div>
     );
   };

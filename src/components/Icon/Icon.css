@@ -1,0 +1,37 @@
+.icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  /* margin: 25px; */
+  position: relative;
+  width: 30px;
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show {
+  display: flex !important;
+}
+
+.mr25 {
+  margin-right: 25px;
+}
+
+@keyframes pulse {
+  from { 
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 1);
+  }
+  to { 
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}

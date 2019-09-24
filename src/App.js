@@ -1,13 +1,32 @@
 import React from 'react';
 import './App.css';
-import PlusIcon from './components/PlusIcon/PlusIcon';
+import Title from './components/Title/Title';
 import IconSection from './components/IconSection/IconSection';
+import Icon from './components/Icon/Icon';
+import PlusIcon from './components/PlusIcon/PlusIcon';
+import NumberedIcon from './components/NumberedIcon/NumberedIcon';
+// import PulseAnimation from './components/PulseAnimation/PulseAnimation';
 
 function App() {
   return (
-    <IconSection>
-      <PlusIcon />
-    </IconSection>
+    <section id="icons">
+      <Title />
+
+      <IconSection>
+        <PlusIcon />
+      </IconSection>
+      <IconSection>
+        <div>
+          <NumberedIcon number={1} classList={"mr25"}/>
+          <NumberedIcon number={2} classList={"mr25"}/>
+          <NumberedIcon number={3} classList={"mr25"}/>
+        </div>
+      </IconSection>
+      <IconSection>
+        <Icon classList={"pulse mr25"}/>
+        <NumberedIcon classList={"pulse mr25"} />
+      </IconSection>
+    </section>
   );
 }
 
