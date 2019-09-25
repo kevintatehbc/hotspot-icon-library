@@ -4,24 +4,8 @@
   cursor: pointer;
   display: inline-block;
   height: 30px;
-  /* margin: 25px; */
   position: relative;
   width: 30px;
-}
-
-.center {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.show {
-  display: flex !important;
-}
-
-.mr25 {
-  margin-right: 25px;
 }
 
 @keyframes pulse {

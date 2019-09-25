@@ -3,9 +3,7 @@ import './Icon.css';
 
 const Icon = ({ children, classList, onClick }) => {
   return (
-    classList ? 
-      <div className={"icon " + classList} onClick={onClick}>{children}</div> :
-      <div className="icon">{children}</div>
+    <div className={classList ? "icon " + classList : "icon"} onClick={onClick}>{children}</div>
   );
 }
 

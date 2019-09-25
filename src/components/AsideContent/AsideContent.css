@@ -1,0 +1,21 @@
+.aside_content {
+  background: black;
+  color: white;
+  display: none;
+  padding: 0 15px;
+  transform: translate(25px, -50%);
+  z-index: 100;
+}
+
+.aside_content::before {
+  border-color: transparent black transparent transparent;
+  border-style: solid;
+  border-width: 16px 16px 16px 0;
+  content: "";
+  height: 0;
+  left: -16px;
+  margin-top: -16px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}

@@ -5,7 +5,6 @@ import IconSection from './components/IconSection/IconSection';
 import Icon from './components/Icon/Icon';
 import PlusIcon from './components/PlusIcon/PlusIcon';
 import NumberedIcon from './components/NumberedIcon/NumberedIcon';
-// import PulseAnimation from './components/PulseAnimation/PulseAnimation';
 
 function App() {
   return (

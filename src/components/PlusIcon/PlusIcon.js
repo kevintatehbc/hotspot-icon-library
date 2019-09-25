@@ -30,7 +30,7 @@ class PlusIcon extends React.Component {
           <span className="center"></span>
           <span className="center"></span>
         </Icon>
-        <div className={rotated ? classLists.content + " show" : classLists.content}>
+        <div className={rotated ? classLists.content + " show-flex" : classLists.content}>
           <p>Content</p>
         </div>
       </div>

@@ -1,1 +1,18 @@
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.show-flex {
+  display: flex !important;
+}
+
+.show-block {
+  display: block !important;
+}
+
+.mr25 {
+  margin-right: 25px;
+}
